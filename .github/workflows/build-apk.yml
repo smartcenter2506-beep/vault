@@ -16,13 +16,13 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Configurar Java
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21'
 
       - name: Empaquetar con Capacitor
         run: |
@@ -51,3 +51,4 @@ jobs:
         with:
           name: Vault-Instalador
           path: Vault.apk
+  
